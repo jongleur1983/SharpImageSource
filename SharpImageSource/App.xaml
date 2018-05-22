@@ -1,0 +1,15 @@
+﻿<Application x:Class="SharpImageSource.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SharpImageSource"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="Image1"
+                         UriSource="/AutoTranslateWindowsStore.png" />
+
+            <!--<Image x:Key="WindowsStore" Source="AutoTranslateWindowsStore.png" />
+            <BitmapImage x:Key="WindowsStoreBitmapImage" UriSource="AutoTranslateWindowsStore.png" />-->
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

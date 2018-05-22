@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpImageSource", "SharpImageSource\SharpImageSource.csproj", "{A08F889A-CC32-42E9-AB79-B32EA0397507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSharp.WpfImageSource", "ImageSharp.WpfImageSource\ImageSharp.WpfImageSource.csproj", "{0FFFA1C3-1219-4B32-BF10-98E4C10BC708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A08F889A-CC32-42E9-AB79-B32EA0397507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08F889A-CC32-42E9-AB79-B32EA0397507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08F889A-CC32-42E9-AB79-B32EA0397507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08F889A-CC32-42E9-AB79-B32EA0397507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FFFA1C3-1219-4B32-BF10-98E4C10BC708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFFA1C3-1219-4B32-BF10-98E4C10BC708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FFFA1C3-1219-4B32-BF10-98E4C10BC708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FFFA1C3-1219-4B32-BF10-98E4C10BC708}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

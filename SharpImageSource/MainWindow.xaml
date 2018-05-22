@@ -1,0 +1,27 @@
+﻿<Window x:Class="SharpImageSource.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SharpImageSource"
+        mc:Ignorable="d"
+        x:Name="Window"
+        Title="MainWindow" Height="350" Width="525">
+    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Border BorderBrush="Red" BorderThickness="1">
+            <Image Source="{StaticResource Image1}" Width="100" Height="100" />
+        </Border>
+        <Border BorderBrush="Blue" BorderThickness="1">
+            <Image Source="{Binding ElementName=Window, Path=ImageSharpSource}" />
+        </Border>
+        <!--<Image>
+            <Image.Source>
+                <ColorConvertedBitmap Source="{StaticResource Image1}"
+                                      DestinationColorContext="{Binding Source={StaticResource Image1}, Path=}"
+                                      DestinationFormat="{x:Static PixelFormats.BlackWhite}" />
+                                      -->
+                <!-- DestinationColorContext="{Binding Source={StaticResource Image1}, Path=Format}"-->
+            <!--</Image.Source>
+        </Image>-->
+    </WrapPanel>
+</Window>
