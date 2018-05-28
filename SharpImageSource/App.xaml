@@ -4,12 +4,6 @@
              xmlns:local="clr-namespace:SharpImageSource"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <ResourceDictionary>
-            <BitmapImage x:Key="Image1"
-                         UriSource="/AutoTranslateWindowsStore.png" />
-
-            <!--<Image x:Key="WindowsStore" Source="AutoTranslateWindowsStore.png" />
-            <BitmapImage x:Key="WindowsStoreBitmapImage" UriSource="AutoTranslateWindowsStore.png" />-->
-        </ResourceDictionary>
+        <ResourceDictionary />
     </Application.Resources>
 </Application>
