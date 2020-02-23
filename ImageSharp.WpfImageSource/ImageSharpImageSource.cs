@@ -5,6 +5,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
+using Color = System.Windows.Media.Color;
 
 namespace ImageSharp.WpfImageSource
 {
@@ -59,9 +60,9 @@ namespace ImageSharp.WpfImageSource
 
         public override int PixelWidth => this.source.Width;
 
-        public override double DpiX => this.source.MetaData.HorizontalResolution;
+        public override double DpiX => this.source.Metadata.HorizontalResolution;
 
-        public override double DpiY => this.source.MetaData.VerticalResolution;
+        public override double DpiY => this.source.Metadata.VerticalResolution;
 
         public override BitmapPalette Palette => null;
 
@@ -198,8 +199,8 @@ namespace ImageSharp.WpfImageSource
 
                         for (int x = 0; x < sourceRect.Width; x++)
                         {
-                            Bgra32 dest = default(Bgra32);
-                            this.source[x, y].ToBgra32(ref dest);
+                            Rgba32 dest = default(Rgba32);
+                            this.source[x, y].ToRgba32(ref dest);
 
                             // Write sRGB (non-linear) since it is implied by
                             // the pixel format we chose.
